@@ -1,0 +1,7 @@
+{
+  "multipart": [
+    {   "apply": { "model": "$baseblock" }},
+    {   "apply": { "model": "orevariants:block/$oretype" }}
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "block/cube_all",
+  "textures": {
+    "1": "$oretype",
+    "particle": "$oretype"
+  },
+  "elements": [
+    {
+      "name": "ore",
+      "from": [-0.1, -0.1, -0.1],
+      "to": [16.1, 16.1, 16.1],
+      "faces": {
+        "north": {"texture": "#1"},
+        "east": {"texture": "#1"},
+        "south": {"texture": "#1"},
+        "west": {"texture": "#1"},
+        "up": {"texture": "#1"},
+        "down": {"texture": "#1"}
+      }
+    }
+  ]
+}

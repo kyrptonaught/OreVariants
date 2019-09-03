@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.kyrptonaught.orevariants.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinOreFeature"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
