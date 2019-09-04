@@ -7,9 +7,9 @@ import net.minecraft.block.Blocks;
 import java.util.Arrays;
 
 public class OreVariant {
-    Block baseBlock;
-    Block[] ores;
-    OreVariantBlock[] oreVariantBlocks;
+    private Block baseBlock;
+    private Block[] ores;
+    private OreVariantBlock[] oreVariantBlocks;
 
     public OreVariant(Block baseBlock, Block[] ores) {
         this.baseBlock = baseBlock;

@@ -14,6 +14,7 @@ minecraft {
 }
 repositories {
 	maven { url "https://maven.swordglowsblue.com" }
+	maven { url 'http://server.bbkr.space:8081/artifactory/libs-release' }
 }
 dependencies {
 	
@@ -27,8 +28,8 @@ dependencies {
 	modImplementation ('me.shedaniel.cloth:config-2:0.+'){transitive = false}
 	include "me.shedaniel.cloth:config-2:+"
 
-	modApi "blue.endless:jankson:+"
-	include "blue.endless:jankson:+"
+	modApi "io.github.cottonmc:Jankson:+"
+	include "io.github.cottonmc:Jankson:+"
 
 	modImplementation "artificemc:artifice:+"
 	include "artificemc:artifice:+"

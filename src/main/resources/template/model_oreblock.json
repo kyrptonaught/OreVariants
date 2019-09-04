@@ -8,15 +8,35 @@
   "elements": [
     {
       "name": "ore",
-      "from": [-0.1, -0.1, -0.1],
-      "to": [16.1, 16.1, 16.1],
+      "from": [
+        0,
+       0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
       "faces": {
-        "north": {"texture": "#1"},
-        "east": {"texture": "#1"},
-        "south": {"texture": "#1"},
-        "west": {"texture": "#1"},
-        "up": {"texture": "#1"},
-        "down": {"texture": "#1"}
+        "north": {
+          "texture": "#1"
+        },
+        "east": {
+          "texture": "#1"
+        },
+        "south": {
+          "texture": "#1"
+        },
+        "west": {
+          "texture": "#1"
+        },
+        "up": {
+          "texture": "#1"
+        },
+        "down": {
+          "texture": "#1"
+        }
       }
     }
   ]

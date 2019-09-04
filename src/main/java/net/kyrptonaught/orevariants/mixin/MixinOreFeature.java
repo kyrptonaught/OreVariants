@@ -1,11 +1,8 @@
 package net.kyrptonaught.orevariants.mixin;
 
 import com.mojang.datafixers.Dynamic;
-import net.kyrptonaught.orevariants.OreVariantsMod;
 import net.minecraft.block.BlockState;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeature;
@@ -13,7 +10,6 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-
 
 import java.util.function.Function;
 

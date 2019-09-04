@@ -20,7 +20,7 @@ public class ArtificeHelper {
         Artifice.registerAssets(OreVariantsMod.MOD_ID + ":oreblocks", pack -> {
             for (ConfigOreBlocks.ConfigOreVariant oreVariant : OreVariantsMod.config.getConfig().oreVariants) {
                 for (Block ore : oreVariant.getOres()) {
-                    String baseID = new Identifier(oreVariant.baseBlockID).getPath();
+                    String baseID = Registry.BLOCK.getId(oreVariant.baseBlock).getPath();
                     String oreID = Registry.BLOCK.getId(ore).getPath();
                     String builtName = (baseID + oreID).replaceAll("[^a-z]", "");
                     pack.add(new Identifier(OreVariantsMod.MOD_ID, "blockstates/" + builtName + ".json"), new TemplateResource(stateTemplate)

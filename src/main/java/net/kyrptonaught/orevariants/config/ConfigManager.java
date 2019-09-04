@@ -1,8 +1,7 @@
 package net.kyrptonaught.orevariants.config;
 
 import blue.endless.jankson.Jankson;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import io.github.cottonmc.jankson.JanksonFactory;
 import net.fabricmc.loader.api.FabricLoader;
 import net.kyrptonaught.orevariants.OreVariantsMod;
 
@@ -11,8 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ConfigManager {
-    private static final Gson GSON = new GsonBuilder().create();
-    private static final Jankson JANKSON = Jankson.builder().build();
+    private static final Jankson JANKSON = JanksonFactory.createJankson();
     ConfigOreBlocks config;
     private final File configFile;
 
@@ -60,7 +58,7 @@ public class ConfigManager {
         }
         try {
             String regularized = JANKSON.load(configFile).toJson(false, false, 0);
-            config = GSON.fromJson(regularized, ConfigOreBlocks.class);
+            config = JANKSON.fromJson(regularized, ConfigOreBlocks.class);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(OreVariantsMod.MOD_ID + " Failed to load config! Overwriting with default config.");
